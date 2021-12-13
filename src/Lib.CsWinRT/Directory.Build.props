@@ -1,0 +1,29 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Platforms>x64;x86;ARM64</Platforms>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <BuildOutDir>$([MSBuild]::NormalizeDirectory('$(SolutionDir)', '$(Platform)', '$(Configuration)'))</BuildOutDir>
+    <OutDir>$([MSBuild]::NormalizeDirectory('$(BuildOutDir)', '$(MSBuildProjectName)', 'bin'))</OutDir>
+    <IntDir>$([MSBuild]::NormalizeDirectory('$(BuildOutDir)', '$(MSBuildProjectName)', 'obj'))</IntDir>
+  </PropertyGroup>
+  
+  <!--CsWinRT properties-->
+  <PropertyGroup>
+    <!--Specify namespaces to create a C# projection for-->
+    <CsWinRTIncludes>MyLib</CsWinRTIncludes>
+    <!--Set output path for generated source files/projection dll to OutDir-->
+    <CsWinRTGeneratedFilesDir>$(OutDir)</CsWinRTGeneratedFilesDir>
+  </PropertyGroup>
+
+  <!--Properties for generating the NuGet package-->
+  <PropertyGroup>
+    <GeneratedNugetDir>nuget</GeneratedNugetDir>
+    <NuspecFile>$(GeneratedNugetDir)/$(MSBuildProjectName).$(Configuration).nuspec</NuspecFile>
+    <!--Specify output path for the generated *.nupkg file-->
+    <OutputPath>$(GeneratedNugetDir)</OutputPath>
+  </PropertyGroup>
+
+</Project>

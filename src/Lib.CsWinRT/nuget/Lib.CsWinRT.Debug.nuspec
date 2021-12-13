@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Lib.CsWinRT</id>
+    <version>0.1.0-prerelease</version>
+    <authors>King Or</authors>
+    <description>A simple component with basic math operations</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+      <group targetFramework=".NETCoreApp3.0" />
+      <group targetFramework="UAP10.0" />
+      <group targetFramework=".NETFramework4.6" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!--Support .NET Core 3, UAP, .NET Framework 4.6, .NET 6, C++ -->
+    <!--Architecture-netural assemblies-->
+    <file src="../../../x64/Debug/Lib.CppWinRT/MyLib.winmd" target="lib/netcoreapp3.0/MyLib.winmd" />
+    <file src="../../../x64/Debug/Lib.CppWinRT/MyLib.winmd" target="lib/uap10.0/MyLib.winmd" />
+    <file src="../../../x64/Debug/Lib.CppWinRT/MyLib.winmd" target="lib/net46/MyLib.winmd" />
+    <file src="../../../x64/Debug/Lib.CsWinRT/bin/Lib.CsWinRT.dll" target="lib/net6.0/Lib.CsWinRT.dll" />
+    <!--Architecture-specific implementation DLLs should be copied into RID-relative folders-->
+    <file src="../../../x64/Debug/Lib.CppWinRT/Lib.CppWinRT.dll" target="runtimes/win10-x64/native/Lib.CppWinRT.dll" />
+  </files>
+</package>
