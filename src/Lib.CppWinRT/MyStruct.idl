@@ -1,0 +1,12 @@
+namespace MyLib
+{
+    [default_interface]
+    runtimeclass MyStruct
+    {
+        MyStruct();
+        Double Add(Double x, Double y);
+        Double Substract(Double x, Double y);
+        Double Multiply(Double x, Double y);
+        Double Divide(Double x, Double y);
+    }
+}
