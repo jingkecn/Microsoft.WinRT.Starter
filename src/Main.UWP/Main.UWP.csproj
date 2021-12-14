@@ -127,6 +127,12 @@
       <Version>1.0.0-experimental1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib.CppWinRT\Lib.CppWinRT.vcxproj">
+      <Project>{395e36af-d29f-4031-bd2a-51a77d5279a5}</Project>
+      <Name>Lib.CppWinRT</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '$(MinimumVisualStudioVersion)' ">
     <VisualStudioVersion>$(MinimumVisualStudioVersion)</VisualStudioVersion>
   </PropertyGroup>
