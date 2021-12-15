@@ -1,4 +1,4 @@
-namespace MyLib
+namespace Lib.CppWinRT
 {
     [default_interface]
     runtimeclass MyStruct

@@ -2,12 +2,12 @@
 
 #include "MyStruct.g.h"
 
-namespace MyLib
+namespace Lib::Static
 {
     struct MyStruct;
 }
 
-namespace winrt::MyLib::implementation
+namespace winrt::Lib::CppWinRT::implementation
 {
     struct MyStruct : MyStructT<MyStruct>
     {
@@ -17,11 +17,11 @@ namespace winrt::MyLib::implementation
         double Multiply(double x, double y);
         double Divide(double x, double y);
     private:
-        std::shared_ptr<::MyLib::MyStruct> mNative;
+        std::shared_ptr<::Lib::Static::MyStruct> mNative;
     };
 }
 
-namespace winrt::MyLib::factory_implementation
+namespace winrt::Lib::CppWinRT::factory_implementation
 {
     struct MyStruct : MyStructT<MyStruct, implementation::MyStruct>
     {

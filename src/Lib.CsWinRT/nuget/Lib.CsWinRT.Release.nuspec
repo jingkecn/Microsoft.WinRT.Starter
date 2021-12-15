@@ -15,9 +15,9 @@
   <files>
     <!--Support .NET Core 3, UAP, .NET Framework 4.6, .NET 6, C++ -->
     <!--Architecture-netural assemblies-->
-    <file src="../../../x64/Release/Lib.CppWinRT/MyLib.winmd" target="lib/netcoreapp3.0/MyLib.winmd" />
-    <file src="../../../x64/Release/Lib.CppWinRT/MyLib.winmd" target="lib/uap10.0/MyLib.winmd" />
-    <file src="../../../x64/Release/Lib.CppWinRT/MyLib.winmd" target="lib/net46/MyLib.winmd" />
+    <file src="../../../x64/Release/Lib.CppWinRT/Lib.CppWinRT.winmd" target="lib/netcoreapp3.0/Lib.CppWinRT.winmd" />
+    <file src="../../../x64/Release/Lib.CppWinRT/Lib.CppWinRT.winmd" target="lib/uap10.0/Lib.CppWinRT.winmd" />
+    <file src="../../../x64/Release/Lib.CppWinRT/Lib.CppWinRT.winmd" target="lib/net46/Lib.CppWinRT.winmd" />
     <file src="../../../x64/Release/Lib.CsWinRT/bin/Lib.CsWinRT.dll" target="lib/net6.0/Lib.CsWinRT.dll" />
     <!--Architecture-specific implementation DLLs should be copied into RID-relative folders-->
     <file src="../../../x64/Release/Lib.CppWinRT/Lib.CppWinRT.dll" target="runtimes/win10-x64/native/Lib.CppWinRT.dll" />

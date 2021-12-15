@@ -4,27 +4,27 @@
 
 #include "Lib.Static.h"
 
-winrt::MyLib::implementation::MyStruct::MyStruct()
-    : mNative(std::make_shared<::MyLib::MyStruct>())
+winrt::Lib::CppWinRT::implementation::MyStruct::MyStruct()
+    : mNative(std::make_shared<::Lib::Static::MyStruct>())
 {
 }
 
-double winrt::MyLib::implementation::MyStruct::Add(double x, double y)
+double winrt::Lib::CppWinRT::implementation::MyStruct::Add(double x, double y)
 {
     return mNative->add(x, y);
 }
 
-double winrt::MyLib::implementation::MyStruct::Substract(double x, double y)
+double winrt::Lib::CppWinRT::implementation::MyStruct::Substract(double x, double y)
 {
     return mNative->substract(x, y);
 }
 
-double winrt::MyLib::implementation::MyStruct::Multiply(double x, double y)
+double winrt::Lib::CppWinRT::implementation::MyStruct::Multiply(double x, double y)
 {
     return mNative->multiply(x, y);
 }
 
-double winrt::MyLib::implementation::MyStruct::Divide(double x, double y)
+double winrt::Lib::CppWinRT::implementation::MyStruct::Divide(double x, double y)
 {
     return mNative->divide(x, y);
 }

@@ -13,7 +13,7 @@
   <!--CsWinRT properties-->
   <PropertyGroup>
     <!--Specify namespaces to create a C# projection for-->
-    <CsWinRTIncludes>MyLib</CsWinRTIncludes>
+    <CsWinRTIncludes>Lib.CppWinRT</CsWinRTIncludes>
     <!--Set output path for generated source files/projection dll to OutDir-->
     <CsWinRTGeneratedFilesDir>$(OutDir)</CsWinRTGeneratedFilesDir>
   </PropertyGroup>
