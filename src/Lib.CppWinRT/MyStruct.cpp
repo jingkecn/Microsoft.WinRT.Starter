@@ -14,9 +14,9 @@ double winrt::Lib::CppWinRT::implementation::MyStruct::Add(double x, double y)
     return mNative->add(x, y);
 }
 
-double winrt::Lib::CppWinRT::implementation::MyStruct::Substract(double x, double y)
+double winrt::Lib::CppWinRT::implementation::MyStruct::Subtract(double x, double y)
 {
-    return mNative->substract(x, y);
+    return mNative->subtract(x, y);
 }
 
 double winrt::Lib::CppWinRT::implementation::MyStruct::Multiply(double x, double y)

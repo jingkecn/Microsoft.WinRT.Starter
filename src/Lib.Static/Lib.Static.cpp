@@ -6,7 +6,7 @@ double Lib::Static::MyStruct::add(double x, double y)
     return x + y;
 }
 
-double Lib::Static::MyStruct::substract(double x, double y)
+double Lib::Static::MyStruct::subtract(double x, double y)
 {
     return x - y;
 }
