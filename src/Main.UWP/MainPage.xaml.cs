@@ -1,8 +1,7 @@
 using System;
+using Windows.UI.Popups;
 using Lib.CppWinRT;
 using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Windows.UI.Popups;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -10,18 +9,18 @@ using Windows.UI.Popups;
 namespace Main.UWP
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    ///     An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage
     {
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private async void myButton_Click(object sender, RoutedEventArgs e)
+        private async void OnClick(object sender, RoutedEventArgs e)
         {
-            myButton.Content = "Clicked";
+            MyButton.Content = "Clicked";
             var myStruct = new MyStruct();
             var dialog = new MessageDialog($"1 + 1 = {myStruct.Add(1, 1)}", $"{myStruct}");
             await dialog.ShowAsync();

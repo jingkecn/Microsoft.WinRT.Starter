@@ -3,14 +3,14 @@
   <PropertyGroup>
     <Platforms>x64;x86;ARM64</Platforms>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <RestoreSources>
       $([MSBuild]::NormalizeDirectory('$(SolutionDir)', 'src', 'Lib.CsWinRT', 'nuget'));
       $(RestoreSources)
     </RestoreSources>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <PackageReference Include="Lib.CsWinRT" Version="0.1.0-prerelease" />
   </ItemGroup>

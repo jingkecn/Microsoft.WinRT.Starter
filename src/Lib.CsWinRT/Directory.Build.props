@@ -3,13 +3,13 @@
   <PropertyGroup>
     <Platforms>x64;x86;ARM64</Platforms>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <BuildOutDir>$([MSBuild]::NormalizeDirectory('$(SolutionDir)', '$(Platform)', '$(Configuration)'))</BuildOutDir>
     <OutDir>$([MSBuild]::NormalizeDirectory('$(BuildOutDir)', '$(MSBuildProjectName)', 'bin'))</OutDir>
     <IntDir>$([MSBuild]::NormalizeDirectory('$(BuildOutDir)', '$(MSBuildProjectName)', 'obj'))</IntDir>
   </PropertyGroup>
-  
+
   <!--CsWinRT properties-->
   <PropertyGroup>
     <!--Specify namespaces to create a C# projection for-->
