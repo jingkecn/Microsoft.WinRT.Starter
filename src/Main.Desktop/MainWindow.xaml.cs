@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation and Contributors.
+// Licensed under the MIT License.
+
 using Microsoft.UI.Xaml;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -15,7 +18,7 @@ namespace Main.Desktop
             InitializeComponent();
         }
 
-        private void OnClick(object sender, RoutedEventArgs e)
+        private void myButton_Click(object sender, RoutedEventArgs e)
         {
             MyButton.Content = "Clicked";
         }

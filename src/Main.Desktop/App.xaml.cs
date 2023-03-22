@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation and Contributors.
+// Licensed under the MIT License.
+
 using Microsoft.UI.Xaml;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -22,8 +25,7 @@ namespace Main.Desktop
         }
 
         /// <summary>
-        ///     Invoked when the application is launched normally by the end user.  Other entry points
-        ///     will be used such as when the application is launched to open a specific file.
+        ///     Invoked when the application is launched.
         /// </summary>
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs args)

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Main.Desktop (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Main.Desktop (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
